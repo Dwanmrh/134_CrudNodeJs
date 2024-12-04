@@ -1,0 +1,48 @@
+<h1 class="text-center">Add a New Film</h1>
+<form action="/movie" method="POST" class="mt-4">
+  <div class="mb-3">
+    <label for="title" class="form-label">Title</label>
+    <input
+      type="text"
+      class="form-control"
+      id="title"
+      name="title"
+      placeholder="Enter film title"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="genre" class="form-label">Genre</label>
+    <input
+      type="text"
+      class="form-control"
+      id="genre"
+      name="genre"
+      placeholder="Enter film genre"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="duration" class="form-label">Duration</label>
+    <input
+      type="number"
+      class="form-control"
+      id="duration"
+      name="duration"
+      placeholder="Enter film duration"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label">Description</label>
+    <input
+      type="text"
+      class="form-control"
+      id="description"
+      name="description"
+      placeholder="Enter film description"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Add Film</button>
+  <a href="/" class="btn btn-secondary">Cancel</a>
+</form>

@@ -1,0 +1,47 @@
+<form action="/movie/<%= film.id %>?_method=PUT" method="POST" class="mt-4">
+  <div class="mb-3">
+    <label for="title" class="form-label">Title</label>
+    <input
+      type="text"
+      class="form-control"
+      id="title"
+      name="title"
+      value="<%= film.title %>"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="genre" class="form-label">Genre</label>
+    <input
+      type="text"
+      class="form-control"
+      id="genre"
+      name="genre"
+      value="<%= film.genre %>"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="duration" class="form-label">Duration</label>
+    <input
+      type="number"
+      class="form-control"
+      id="duration"
+      name="duration"
+      value="<%= film.duration %>"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label">Description</label>
+    <input
+      type="text"
+      class="form-control"
+      id="description"
+      name="description"
+      value="<%= film.description %>"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Update Film</button>
+  <a href="/" class="btn btn-secondary">Cancel</a>
+</form>

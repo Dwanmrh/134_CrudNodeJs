@@ -1,0 +1,71 @@
+/* General styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1, h5 {
+    color: #2c3e50;
+  }
+  
+  /* Card styles */
+  .movie-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #movie-details {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #buy-ticket {
+    margin-top: 15px;
+  }
+  
+  /* Forms */
+  form {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: #3498db;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2980b9;
+  }
+  
+  .btn-success {
+    background-color: #27ae60;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background-color: #229954;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  

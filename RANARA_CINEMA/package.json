@@ -1,0 +1,21 @@
+{
+  "name": "ranara_cinema",
+  "version": "1.0.0",
+  "description": "PAW PROJECT 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ridwan Hidayatullah",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.1",
+    "mysql2": "^3.11.5",
+    "validator": "^13.12.0"
+  }
+}

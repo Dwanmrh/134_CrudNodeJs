@@ -1,0 +1,74 @@
+/* Global Styling */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Pastikan halaman minimal setinggi viewport */
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.min-vh-100 {
+  min-height: 100vh; /* Memastikan elemen setidaknya setinggi layar penuh */
+}
+
+.flex-fill {
+  flex: 1; /* Membuat elemen mengisi ruang di antara navbar dan footer */
+}
+
+main {
+  flex: 1; /* Membuat area konten fleksibel untuk mengisi ruang */
+  padding: 20px;
+}
+
+h1 {
+  color: #343a40;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Card Styling */
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Haluskan efek transisi */
+  border: 1px solid #e0e0e0; /* Tambahkan garis halus pada kartu */
+  border-radius: 8px; /* Tambahkan sudut melengkung */
+  overflow: hidden; /* Hindari elemen keluar dari batas kartu */
+}
+
+.card:hover {
+  transform: scale(1.1); /* Perbesar kartu sebesar 10% */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Bayangan lebih jelas saat hover */
+  border-color: #007bff; /* Ubah warna border saat hover */
+}
+
+.card img {
+  transition: transform 0.3s ease-in-out; /* Efek transisi pada gambar */
+}
+
+.card:hover img {
+  transform: scale(1.05); /* Sedikit perbesar gambar untuk efek dramatis */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #dee2e6;
+  margin-top: auto; /* Pastikan footer selalu di bagian bawah */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  footer {
+    font-size: 0.8rem;
+  }
+}

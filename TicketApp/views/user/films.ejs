@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Daftar Film</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Daftar Film</h2>
+      <div class="row">
+        <% films.forEach((film) => { %>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img
+              src="<%= film.image %>"
+              class="card-img-top"
+              alt="<%= film.title %>"
+            />
+            <div class="card-body">
+              <h5 class="card-title"><%= film.title %></h5>
+              <p class="card-text"><%= film.description %></p>
+              <a href="/user/jadwal/<%= film.id %>" class="btn btn-primary"
+                >Lihat Jadwal</a
+              >
+            </div>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </body>
+</html>

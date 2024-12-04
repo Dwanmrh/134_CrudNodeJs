@@ -1,0 +1,44 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <!-- Tambahkan logo di atas -->
+      <div class="text-center mb-3">
+        <img
+          src="/images/logo.png"
+          alt="Cinema Logo"
+          class="img-fluid"
+          style="max-width: 150px"
+        />
+      </div>
+      <h2 class="text-center mb-4">Buat Akun Baru</h2>
+      <form action="/signup" method="POST" class="shadow p-4 rounded bg-light">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            placeholder="Pilih username Anda"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="Buat password Anda"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Daftar</button>
+        <p class="text-center mt-3">
+          Sudah punya akun? <a href="/login">Login sekarang</a>.
+        </p>
+      </form>
+    </div>
+  </div>
+</div>

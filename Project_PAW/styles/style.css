@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.container.flex-grow-1 {
+  flex-grow: 1;
+
+  h1 {
+    font-weight: bold;
+    color: #333;
+  }
+
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+}
